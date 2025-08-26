@@ -1,16 +1,14 @@
 import React from 'react'
 
-
 const education = [
-  { time: '2023-2027', title: 'B.Tech in CSE', org: 'Graphic Era hill University', details: 'Focus on software engineering.' },
+  { time: '2023 — 2027', title: 'B.Tech in CSE', org: 'Graphic Era Hill University', details: 'Focus on software engineering.' },
 ]
 
 export default function Experience() {
   return (
     <section id="experience" className="py-20">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8"> Education</h2>
-      <div className="grid md:grid-cols-2 gap-8">
-        <Timeline title="Experience" items={experiences} />
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">Education</h2>
+      <div className="grid md:grid-cols-1 gap-8">
         <Timeline title="Education" items={education} />
       </div>
     </section>

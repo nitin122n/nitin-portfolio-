@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { profile } from '../data/profile'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         >
           <div className="avatar-ring w-48 h-48 md:w-56 md:h-56 rounded-full grid place-items-center">
             <img
-              src="/avatar.jpg"
+              src={profile.avatar}
               alt="Profile"
               className="relative z-10 w-44 h-44 md:w-52 md:h-52 object-cover rounded-full border-4 border-neutral-800 dark:border-neutral-100"
             />
@@ -22,13 +23,13 @@ export default function Home() {
         </motion.div>
 
         <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-brand-600 dark:text-brand-300">
-          NITIN KANDPAL
+          {profile.name.toUpperCase()}
         </h1>
-        <p className="mt-3 text-lg opacity-80">Full‑Stack Developer • React • Node.js</p>
+        <p className="mt-3 text-lg opacity-80">{profile.role}</p>
         <div className="mt-6 flex flex-wrap items-center gap-4 opacity-90">
-          <a href="mailto:nitinkandpalco@gmail.com" className="underline">nitinkandpalco@gmail.com</a>
+          <a href={`mailto:${profile.email}`} className="underline">{profile.email}</a>
           <span className="hidden sm:inline">|</span>
-          <a href="tel:7579445436" className="hover:text-brand-600 dark:hover:text-brand-300">+91‑7579445436</a>
+          <a href="#contact" className="hover:text-brand-600 dark:hover:text-brand-300">Contact</a>
           <span className="hidden sm:inline">|</span>
           <a href="#projects" className="hover:text-brand-600 dark:hover:text-brand-300">Projects</a>
         </div>

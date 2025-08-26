@@ -10,7 +10,7 @@ import Footer from './components/Footer.jsx'
 
 export default function App() {
   const [theme, setTheme] = useState(
-    typeof window !== 'undefined' ? localStorage.getItem('theme') || 'dark' : 'dark'
+    typeof window !== 'undefined' ? localStorage.getItem('theme') || 'light' : 'light'
   )
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function App() {
   }, [theme])
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+    <div className="min-h-screen bg-black text-neutral-100">
       <Navbar theme={theme} setTheme={setTheme} />
       <main className="container mx-auto px-4">
         <Home />

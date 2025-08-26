@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { profile } from '../data/profile'
 
 export default function Contact() {
   const [status, setStatus] = useState('')
@@ -25,9 +26,9 @@ export default function Contact() {
         <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-soft">
           <div className="opacity-80">Connect</div>
           <ul className="mt-3 space-y-2">
-            <li><a className="underline" href="https://www.linkedin.com/posts/anjalirani2_sql-activity-7361615593919107073-VP55?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEy6wRoB32wUu_W4KLNJghT0kIF8Fwl30d0" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a className="underline" href="https://www.linkedin.com/in/nitinkandpal07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">LinkedIn</a></li>
             <li><a className="underline" href="https://github.com/nitin122n" target="_blank" rel="noreferrer">GitHub</a></li>
-            <li><a className="underline" href="nitinkandpalco@gmail.com">Email</a></li>
+            <li><a className="underline" href="mailto:nitinkandpalco@gmail.com">Email</a></li>
           </ul>
         </div>
       </div>
