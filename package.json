@@ -1,16 +1,22 @@
+
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    // your dependencies here
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
   "dependencies": {
     "framer-motion": "^11.18.2",
     "react": "^18.3.1",
@@ -24,8 +30,5 @@
     "tailwindcss": "^3.4.17",
     "vite": "^5.4.19"
   }
-  "engines": {
-  "node": "22.x"
 }
 
-}
